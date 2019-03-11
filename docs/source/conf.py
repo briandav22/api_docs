@@ -14,9 +14,9 @@
 #
 import os
 import sys
-sys.path.insert(0, 'C:\\Users\\briand.PLXR\\Desktop\\sphynx\\code')
+# sys.path.insert(0, 'C:\\Users\\briand.PLXR\\Desktop\\sphynx\\code')
 
-print(sys.path)
+# print(sys.path)
 
 # -- Project information -----------------------------------------------------
 
