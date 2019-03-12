@@ -3,7 +3,7 @@
 Scrutinizer JSON 
 ================
 
-This is the class used to build the JSON data you will be sending to the Scrutinizer backend. 
+This is the class used to build the JSON data you will be posting to the Scrutinizer API.
 
 This class can be iniated without providing any arugments. 
 
