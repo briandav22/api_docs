@@ -59,7 +59,7 @@ orderBy = 'sum_octetdeltacount'
 times = {'dateRange': 'LastTenMinutes'}
     Used to select which time range you want to run the report in. Other samples are ``'Last24Hours'`` or ``'LastHour'`` further examples can be examing by changing timeframs in a scrutinizer report and examining the :ref:`api_report` tab.
 filters = {'sdfDips_0': 'in_GROUP_ALL'}
-    Used to select what devices you want to pull data from. The best best for finding the values is by looking at the :ref:`api_report`. In that tab you may see hex values such as ``'sdfDips_0': 'in_0A010104_0A010104-11'``. The API does support sending in the IP information, so you could rewrite that as ``'sdfDips_0': 'in_10.1.1.4_10.1.1.4-11'`` and yield the same results. 
+    Used to select what devices you want to pull data from. The best way to find the values is by looking at the :ref:`api_report`. In that tab you may see hex values such as ``'sdfDips_0': 'in_0A010104_0A010104-11'``. The API does support sending in the IP information, so you could rewrite that as ``'sdfDips_0': 'in_10.1.1.4_10.1.1.4-11'`` and yield the same results. 
     
     Things become a little more complex when you want to filter on specific information. For adding a filter for a port and IP adress would look like this :
     
