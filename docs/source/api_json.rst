@@ -11,7 +11,16 @@ This class can be iniated without providing any arugments.
 
     scrutinizer_json = scrut_json()
 
-This would store a object into the ``scrutinizer_json`` variable that can later be passed into :ref:`api_params` class.
+This would store a object into the ``scrutinizer_json`` variable that is accepted as a value to the ``json_data`` arugment in the :ref:`api_params` class.
+
+.. code-block:: python    
+
+    params = scrut_params(
+        client=client,
+        json_data = scrutinizer_json.report_json, #sending report_json in.
+        data_requested=report_format.format
+
+    )
 
 However, you will often find that you want to modify what type of data is returned by the API. In this case you will want to change the arguments passed in this class. 
 
@@ -19,9 +28,23 @@ However, you will often find that you want to modify what type of data is return
 
     scrutinizer_json = scrut_json(reportTypeLang ="srcHosts")
 
-In this case we are changing the default 'conversationsApp' value to 'srcHosts' which returns different JSON from Scrutinizer. 
+The are two properties that are availble to objects created from this class. 
 
-For a full understanding of which values can be used to populate each argument I always reccomend looking at the :ref:`api_report` while in scrutinizer. Below is a list of Arugments that are supported by the ``scrut_json()`` class. 
+``report_json`` : This is what the Python Wrapper is mostly designed for, getting quick access to the report data. This is what we used in the example above. There are many arguments that can be passed in to modify this property. For a full understanding of which values can be used to populate each argument take a look at the :ref:`api_report` while in scrutinizer. At the bottom of this page there is a list of the arguments supported by the ``scrut_json()`` class. 
+
+``status_json``: Instead of passing the ``report_json`` property into :ref:`api_params` you could send the ``status_json`` property. This would return all of the JSON that makes up the status tab. Although this is more of a niche use case, it's meant to display that anything done in the web interface can be accesses via the API. Adding new properties into the ``scrut_json()`` class is simple, you just need to be aware of what you are asking for. 
+
+.. code-block:: python    
+
+    params = scrut_params(
+        client=client,
+        json_data = scrutinizer_json.status_json, #sending status_json in.
+        data_requested=report_format.format
+
+    )
+
+
+
 
 Arguments
 ----------

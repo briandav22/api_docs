@@ -38,4 +38,6 @@ The :ref:`api_report` tab displays all of the JSON that is passed to render and 
    scrut_api_client() <api_client>
    scrut_json() <api_json>
    scrut_params() <api_params>
-   
+   scrut_data_requested() <api_data_requested>
+   scrut_request() <api_request>
+   scrut_print() <api_printer>
