@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Scrutinizer JSON" href="scrut_json.html" />
-    <link rel="prev" title="Scrutinizer API" href="scrut_api.html" />
+    <link rel="next" title="Scrutinizer JSON" href="api_json.html" />
+    <link rel="prev" title="Welcome to Scrutinizer Python API’s documentation!" href="api_welcome.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,17 +34,16 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-scrutinizer_api">
-<span id="scrutinizer-api-client"></span><h1>Scrutinizer API Client<a class="headerlink" href="#module-scrutinizer_api" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="scrutinizer_api.scrut_api_client">
-<em class="property">class </em><code class="descclassname">scrutinizer_api.</code><code class="descname">scrut_api_client</code><span class="sig-paren">(</span><em>verify=False</em>, <em>hostname=''</em>, <em>authToken=''</em><span class="sig-paren">)</span><a class="headerlink" href="#scrutinizer_api.scrut_api_client" title="Permalink to this definition">¶</a></dt>
-<dd><p>This class iniates an API Client that will be used for making requests to the Scrutinizer API. In order to get started you will need the hostname or IP address of your Scrutinizer appliance as well as an authentication token.</p>
-<p>Authentication Tokens can be generated from within the Scrutinizer user interface by going to the Admin Tab - &gt; Security- &gt; Authentication Tokens</p>
+  <div class="section" id="scrutinizer-api-client">
+<span id="api-client"></span><h1>Scrutinizer API Client<a class="headerlink" href="#scrutinizer-api-client" title="Permalink to this headline">¶</a></h1>
+<p>This class iniates an API Client that will be used for making requests to the Scrutinizer API. In order to get started you will need the hostname or IP address of your Scrutinizer appliance as well as an authentication token.</p>
 <p>A sample api client might look like</p>
-<p><code class="docutils literal notranslate"><span class="pre">scrut_client</span> <span class="pre">=</span> <span class="pre">scrutinizer_api.scrut_api_client()</span></code></p>
-</dd></dl>
-
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scrut_client</span> <span class="o">=</span> <span class="n">scrut_api_client</span><span class="p">(</span><span class="n">hostname</span><span class="o">=</span><span class="s2">&quot;some_hostname&quot;</span><span class="p">,</span>
+                                <span class="n">authToken</span><span class="o">=</span><span class="s2">&quot;some_authtoken&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Authentication Tokens can be generated from within the Scrutinizer user interface by going to the Admin Tab - &gt; Security- &gt; Authentication Tokens</p>
+<img alt="_images/auth_token.png" src="_images/auth_token.png" />
 </div>
 
 
@@ -64,24 +63,24 @@
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="scrut_api.html">Scrutinizer API</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Scrutinizer API Client</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scrut_json.html">Scrutinizer JSON</a></li>
-<li class="toctree-l2"><a class="reference internal" href="params.html">Setting up Request Params</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="api_welcome.html">Scrutinizer Python Wrapper</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">scrut_api_client()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_json.html">scrut_json()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_params.html">scrut_params()</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="report_json.html">Report JSON (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_json_example.html">JSON Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_report.html">Report JSON (API)</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="scrut_api.html">Scrutinizer API</a><ul>
-      <li>Previous: <a href="scrut_api.html" title="previous chapter">Scrutinizer API</a></li>
-      <li>Next: <a href="scrut_json.html" title="next chapter">Scrutinizer JSON</a></li>
+  <li><a href="api_welcome.html">Welcome to Scrutinizer Python API’s documentation!</a><ul>
+      <li>Previous: <a href="api_welcome.html" title="previous chapter">Welcome to Scrutinizer Python API’s documentation!</a></li>
+      <li>Next: <a href="api_json.html" title="next chapter">Scrutinizer JSON</a></li>
   </ul></li>
   </ul></li>
 </ul>

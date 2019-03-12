@@ -1,16 +1,6 @@
 class scrut_api_client:
     
-    """
-    
-    This class iniates an API Client that will be used for making requests to the Scrutinizer API. In order to get started you will need the hostname or IP address of your Scrutinizer appliance as well as an authentication token.
-    
-    Authentication Tokens can be generated from within the Scrutinizer user interface by going to the Admin Tab - > Security- > Authentication Tokens
 
-    A sample api client might look like 
-    
-    ``scrut_client = scrutinizer_api.scrut_api_client()``
-
-    """
     def __init__(
             self,
             verify=False,

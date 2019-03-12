@@ -1,5 +1,0 @@
-
-This is a Title!
-================
-
-.. py:function:: enumerate(sequence[, start=0])
