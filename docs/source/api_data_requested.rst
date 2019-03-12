@@ -11,12 +11,12 @@ The default arugments for this class return the top 10 results, and only concern
 
     data_requested = scrut_data_requested(
         data_requested={
-                "inbound" : { 
-                    "graph" : "timeseries", #request graphing data
-                    "table" : {
-                       "query_limit" : {
-                               "offset" : 0,
-                               "max_num_rows" : 100 #increase max rows
+                'inbound' : { 
+                    'graph' : 'timeseries', #request graphing data
+                    'table' : {
+                       'query_limit' : {
+                               'offset' : 0,
+                               'max_num_rows' : 100 #increase max rows
                        }
                }
            }
