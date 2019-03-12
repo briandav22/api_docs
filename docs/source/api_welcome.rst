@@ -7,7 +7,7 @@ This is a python wrapper for the Scrutinizer API. It is meant to simplify the pr
 You can clone the code from github:
 https://github.com/briandav22/ScrutinizerPythonAPI
 
-There are five steps you will need in order, they are detailed in the Table of Contents on the left, there is a sample code block below that walks through each step as well. 
+There are five steps needed in order to complete the API request to Scrutinizer, they are detailed in the Table of Contents on the left, there is a sample code block below that walks through each step as well. 
 
 Typically the biggest changes someone will make is passing arguments into the :ref:`api_json` class. To learn more about what types of arugments you can pass to the :ref:`api_json` class, take a look at the :ref:`api_report`  tab found within any Scrutinzier report. 
 
