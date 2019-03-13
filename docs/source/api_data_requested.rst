@@ -5,13 +5,13 @@ Data Requested
 
 The ``scrut_data_requested()`` class is used to modify if you want graphing data back, table data back, or both. It is also used to modify the number of rows you want returned in the JSON. 
 
-The default arugments for this class return the top 10 results, and only concern themselves with the data in the table. If you wanted to expand this to include graph data and more rows, a sample arguments would look like this. 
+The default arugments for this class return the top 10 results, and only concern themselves with the data in the table. If you wanted to expand this to include graph data and more rows, you would need to pass an object into this class when initating it. 
 
-In the below example the ``data_requested`` variable would have a ``format`` property applied to it. 
+In the below example we are electing to receive the graph data back, and increase the maximium rows to 100. We are iniating this class with the ``report_format`` variable. This variable will have a ``format`` property applied to it, we will specify that when passing it into :ref:`api_params`: later on.  
 
 .. code-block:: python    
 
-    data_requested = scrut_data_requested(
+    report_format = scrut_data_requested(
         data_requested={
                 'inbound' : { 
                     'graph' : 'timeseries', #request graphing data

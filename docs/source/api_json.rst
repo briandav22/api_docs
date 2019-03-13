@@ -51,13 +51,13 @@ Arguments
 reportTypeLang = 'conversationsApp'
     The default value will return data for a Pair Reports -> Conversations App report. The value can be set to any valid reportTypeLang, for example  ``reportTypeLang ='srcHosts'`` would return the JSON for a Source Hosts report. 
 reportDirections = {'selected': 'inbound'}
-    The default value for this is inbound. Alternatively you could select ‘outbound’ or ‘both’
+    Sets the direction you want the report in. You could change this to ``outbound``, or modify the JSON to do both inbound and outbound. If you are reporting on all interfaces for a device, or all Devices, then direction is irrelevant, you can just leave the default.
 dataGranularity = {'selected': 'auto'}
     Data Granularity is defaulted to Auto. What this means is that the granularity level is selected based on the time range of the report. For example a report spanning 24 hours will have a auto granularity of 30m, you could force this down by setting it with ``dataGranularity = {'selected': '1m'}``
 orderBy = 'sum_octetdeltacount'
     Typically a user would leave this as the defaul value. However you could change it to trend by something else, for example ``orderBy = "sum_packetdeltacount"``
 times = {'dateRange': 'LastTenMinutes'}
-    Used to select which time range you want to run the report in. Other samples are ``'Last24Hours'`` or ``'LastHour'`` further examples can be examing by changing timeframs in a scrutinizer report and examining the :ref:`api_report` tab.
+    Used to select which time range you want to run the report in. Other examples are ``'Last24Hours'`` or ``'LastHour'`` further examples can be examing by changing timeframs in a scrutinizer report and examining the :ref:`api_report` tab.
 filters = {'sdfDips_0': 'in_GROUP_ALL'}
     Used to select what devices you want to pull data from. The best way to find the values is by looking at the :ref:`api_report`. In that tab you may see hex values such as ``'sdfDips_0': 'in_0A010104_0A010104-11'``. The API does support sending in the IP information, so you could rewrite that as ``'sdfDips_0': 'in_10.1.1.4_10.1.1.4-11'`` and yield the same results. 
     
