@@ -17,6 +17,7 @@ The ``scrut_request()`` class takes in a single argument, this argument is going
 In the above code block we have iniated this class with the response variable. One the JSON data is returned fromt he Scrutinizer API it is stored into two properties. 
 
 ``resp`` : This class uses the request library under the hood. We store the request object the ``resp`` property. 
+
 ``data`` : More commonly you would want to access the ``data`` property. This property is already converted into JSON data which makes it easier to loop over, and modify as needed. 
 
 Here is a simple example of looping over the data property to filter on all source IP addresses returned. 
