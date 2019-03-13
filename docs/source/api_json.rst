@@ -11,7 +11,7 @@ This class can be iniated without providing any arugments.
 
     scrutinizer_json = scrut_json()
 
-The ``scrutinizer_json``` variable is now given a couple properties that can be passed into :ref:`api_params` later on. In the code block below we are sending in the ``report_json`` property.
+The ``scrutinizer_json`` variable is now given a couple properties that can be passed into :ref:`api_params` later on. In the code block below we are sending in the ``report_json`` property.
 
 .. code-block:: python    
 
