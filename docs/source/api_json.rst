@@ -11,7 +11,7 @@ This class can be iniated without providing any arugments.
 
     scrutinizer_json = scrut_json()
 
-This would store a object into the ``scrutinizer_json`` variable that is accepted as a value to the ``json_data`` arugment in the :ref:`api_params` class.
+The ``scrutinizer_json``` variable is now given a couple properties that can be passed into :ref:`api_params` later on. In the code block below we are sending in the ``report_json`` property.
 
 .. code-block:: python    
 
